@@ -22,7 +22,7 @@ Here's what it will add / remove / change:
 - Removal of data-lowres folder (seems to be unused)
 - Forest World remake (but before that, removal so Icy Island can be focused on)
 - Removal of unnecessary graphics (nightsky.png, forest1.jpg, dummyguy, cherry bomb, juicebox, etc...)
-- Removal of unnecessary add-ons (Halloween 2014, Incubator, Bonus Island 3)
+- Removal of unnecessary add-ons (Incubator, Bonus Island 3)
 - Removal of unused graphics and music (cut down the file size a lot)
 - A little bit of reorganization
 - Desert Island (World 3)
