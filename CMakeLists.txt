@@ -38,12 +38,16 @@ PROJECT(SUPERTUX)
 
 ## Version, for display in title bar.
 ## Will add 'commit <hash>' to the end if git is available and this is a git repository.
-SET(SUPERTUX_VERSION "0.3.5a")
+SET(SUPERTUX_VERSION "0.3.6")
 
 ### CMake configuration
 
-# allow building with CMake 2.6. Set compatibility options. Use some bundled modules as a fallback
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6.1)
+# i dont like cmake
+set(CMAKE_WARN_DEPRECATED OFF)
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5 CACHE STRING "")
+
+cmake_minimum_required(VERSION 3.22)
+
 IF(COMMAND cmake_policy)
   CMAKE_POLICY(SET CMP0003 NEW)
   CMAKE_POLICY(SET CMP0008 NEW)
