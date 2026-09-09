@@ -84,8 +84,10 @@ IF(WIN32)
   FILE(GLOB DLLS "${PROJECT_SOURCE_DIR}/dependencies/dll/*")
 ENDIF(WIN32)
 
+# my computer is bad
 if(MINGW)
-  set(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> <FLAGS> <DEFINES> -i <SOURCE> -o <OBJECT>")
+  set(CMAKE_RC_FLAGS "")
+  set(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> -i <SOURCE> -o <OBJECT>")
 endif(MINGW)
 
 ## Add lots of dependencies to compiler switches
