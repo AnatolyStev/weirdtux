@@ -88,6 +88,7 @@ ENDIF(WIN32)
 if(MINGW)
   set(CMAKE_RC_FLAGS "")
   set(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> -i <SOURCE> -o <OBJECT>")
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lmingw32 -lSDL2main")
 endif(MINGW)
 
 ## Add lots of dependencies to compiler switches
