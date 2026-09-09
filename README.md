@@ -1,5 +1,5 @@
-WeirdTux - <http://supertux.lethargik.org/>
-===========================================
+WeirdTux
+========
 Last update: September 9, 2026
 
 Description
