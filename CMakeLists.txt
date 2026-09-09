@@ -74,7 +74,7 @@ IF(WIN32)
 
   SET_PROPERTY(DIRECTORY PROPERTY COMPILE_DEFINITIONS_DEBUG DEBUG)
   ## Enable multi-processor compilation (faster)
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
+  # SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP") # doesn't work on my computer :(
   ## And shut up about unsafe stuff
   ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS)
   ## Add an icon
@@ -83,6 +83,10 @@ IF(WIN32)
   ## Find all used libraries
   FILE(GLOB DLLS "${PROJECT_SOURCE_DIR}/dependencies/dll/*")
 ENDIF(WIN32)
+
+if(MINGW)
+  set(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> <FLAGS> <DEFINES> -i <SOURCE> -o <OBJECT>")
+endif(MINGW)
 
 ## Add lots of dependencies to compiler switches
 
