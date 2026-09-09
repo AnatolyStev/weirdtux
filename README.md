@@ -1,8 +1,6 @@
-[![Build Status](https://travis-ci.org/SuperTux/supertux.svg?branch=master)](https://travis-ci.org/SuperTux/supertux)
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/4025/badge.svg)](https://scan.coverity.com/projects/4025)
-SuperTux - <http://supertux.lethargik.org/>
+WeirdTux - <http://supertux.lethargik.org/>
 ===========================================
-Last update: February 26, 2010
+Last update: September 9, 2026
 
 Description
 -----------
@@ -14,6 +12,23 @@ Run and jump through multiple worlds, fighting off enemies by jumping
 on them, bumping them from below or tossing objects at them, grabbing
 power-ups and other stuff on the way.
 
+WeirdTux fork
+-------------
+
+WeirdTux is a fork of SuperTux v0.3.5a that is intended to be like my 
+own small little strange fork of SuperTux v0.3.5a.
+
+Here's what it will add / remove / change:
+- Removal of data-lowres folder (seems to be unused)
+- Forest World remake (but before that, removal so Icy Island can be focused on)
+- Removal of unnecessary graphics (nightsky.png, forest1.jpg, dummyguy, cherry bomb, juicebox, etc...)
+- Removal of unnecessary add-ons (Halloween 2014, Incubator, Bonus Island 3)
+- Removal of unused graphics and music (cut down the file size a lot)
+- A little bit of reorganization
+- Desert Island (World 3)
+- Various bug fixes from SuperTux v0.4, possibly v0.5?
+- Removal of contrib folder (all it has is just few very old things that probably don't work anymore)
+- Compilation fixes (done)
 
 Story: Penny gets captured!
 ---------------------------
@@ -31,38 +46,6 @@ thought of trying to reclaim her, you haven't got a chance! -Nolok"
 Tux looks and sees Nolok's fortress in the distance. Determined to
 save his beloved Penny, he begins his journey.
 
-
-Documentation
--------------
-Important documentation for SuperTux is contained in multiple files.
-Please see them:
-
-`INSTALL.md`
-: Requirements, compiling and installing.
-
-`README.md`
-: This file
-
-`WHATSNEW.txt`
-: Changes since the previous versions of SuperTux.
-
-`LICENSE`
-: The GNU General Public License, under whose terms SuperTux is
-licensed. (Most of the data subdirectory is also licensed under
-CC-by-SA)
-
-`docs/levelguidelines.txt`
-: Very useful information for those that want to design levels for
-SuperTux.
-
-`data/credits.txt`
-: Credits for people that contributed to the creationof SuperTux. (You
-can view these in the game menuas well.)
-
-`data/README`
-: Licensing information about the data.
-
-
 Running the game
 ----------------
 
@@ -79,10 +62,13 @@ causes problems on some setups, so just run `supertux2 --window` and
 you should be set.
 
 The game uses OpenGL to render the graphics. You will either need a
-CPU with about 10 GHz or an accelerated video card with the vendor's
-drivers. (On Linux, the team recommends using cards from NVidia with
-the proprietary drivers, but ATI or another vendor should do.)
+CPU with about 10 GHz (which is impossible) or an accelerated video 
+card with the vendor's drivers. (On Linux, the team recommends using 
+cards from Nvidia with the proprietary drivers or AMD, but ATI or another 
+vendor should do)
 
+If only Intel made GPUs... oh wait, they do. Never heard of them much so
+I can't really recommend them for now.
 
 Playing the game
 ----------------
@@ -94,7 +80,9 @@ right, left, power and 'P' to pause/unpause the game. There isn't much
 to tell about the first few, but the "action" key allows you to pick
 up objects and use any powerup you got. For instance, with the fire
 flower, you can shoot bullets (note that this is the only power
-currently implemented).
+currently implemented that allows you to shoot bullets).
+
+The Ice Flower will be removed later.
 
 Other useful keys include the Esc key, which is used to go to the menu
 or to go up a level in the menu. The menu can be navigated using the
@@ -107,21 +95,21 @@ enter the current level.
 Development status
 ------------------
 
-This version of SuperTux is still under development, even though the
+This version of WeirdTux is still under development, even though the
 0.3 line of versions is somewhat aged. This means that badguys,
 features, levels, graphics or anything else may be removed in the
 future.
 
-Especially the Forest world included in this package may be subject to
-drastic changes. These changes may go as far as removing the world
-altogether. Currently (February 2010) there is no consensus within the
-SuperTux development community regarding the fate of the Forest. Don't
-get too attached to it ;)
+Especially the Forest World included in this package may be subject to
+drastic changes. These changes will go as far as removing the world
+altogether for at least a little while to release WeirdTux v0.3.6.
+
+If the Forest World is removed, it is guaranteed to come back later on.
 
 
 The End
 -------
 
-Thanks for trying out SuperTux.
+Thanks for trying out WeirdTux.
 
-The SuperTux development team
+Vaesea
